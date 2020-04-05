@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    background:rgb(152, 152, 245);
+    width:100%;
+}
+
+.left-header{
+    width:50%;
+    float: left;
+}
+
+.left-header h1{
+     width:100%;
+     font-size:29px;
+     word-spacing: 10px;
+     padding-left:5px;
+     color:#fff;
+ }
+
+.right-header{
+    width:50%;
+    float: right;
+}
+
+.right-header ul{
+    list-style-type:none;
+    padding-right:10px;
+    text-align:right; 
+}
+
+.right-header ul li{
+    display:inline-block;;
+    padding:4px 30px;
+}
+
+.right-header li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 4px;
+    text-decoration: none
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex:50%;
+    max-width:100%;
+    padding: 65px 10px;
+    font-family:sans-serif;
+}
+
+.column h1{
+    text-align:left;
+    font-family:sans-serif;
+    font-size:40px;
+}
+
+.fcol{
+    padding:75px 40px;
+}
+
+.fcol h4{
+    padding-top:85px;
+    font-family:sans-serif;
+    font-style: normal;
+    font-weight:normal;
+}
+
+button{
+    color:#fff;
+    height:60px;
+    width:180px;
+    background:rgb(152, 152, 245);
+}
+.scol{
+    
+}
+
+img{
+    width:100%;
+   padding-left:25px;
+}
+
+.footer{
+  
+    height:150px;
+    width:100%;
+    text-align:center;
+}
+
+
+.fa{
+    padding:10px 40px;
+    color:#000;
+    margin-top:40px;
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex:100%;
+        max-width:100%;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .header {
+        display:flex;
+        flex:100%;
+        flex-direction:column;
+        max-width: 100%;
+    }
+   
+
+    .left-header h1{
+        width:100%;
+        font-size:29px;
+        word-spacing: 10px;
+        text-align:center;
+        color:#fff;
+        display:block;
+    }
+
+    .left-header{
+        width:100%;
+        
+    }
+
+    .right-header{
+        width:100%;
+        display:block;
+    }
+
+    .right-header ul{
+        list-style-type:none;
+        padding-right:10px;
+        text-align:center; 
+    }
+
+    .btn{
+        height:50px;
+        width:150px;
+        position: relative;
+        left:140px;
+        }
+   
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .btn{
+        height:50px;
+        width:150px;
+        position: relative;
+        left:140px;
+        }
+
+        .right-header ul li{
+            display:inline-block;;
+            padding:4px 9px;
+        }
+
+        .column {
+            flex:50%;
+            max-width:100%;
+            padding:0px 10px;
+            font-family:sans-serif;
+        }
+
+        
+.fcol h4{
+    padding-top:5px;
+    font-family:sans-serif;
+    font-style: normal;
+    font-weight:normal;
+}
+
+button{
+    color:#fff;
+    height:60px;
+    max-width:180px;
+    width:25%;
+    background:rgb(152, 152, 245);
+    margin-left:150px;
+}
+
+}
+
+@media screen and (max-width:1072px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .btn{
+        height:50px;
+        width:150px;
+        position: relative;
+        left:140px;
+        }
+
+        .right-header ul li{
+            display:inline-block;;
+            padding:4px 9px;
+        }
+
+}
